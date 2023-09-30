@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DBD118A62AC3EF5000957823 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118A52AC3EF5000957823 /* main.cpp */; };
+		DBD118AE2AC3EF7700957823 /* Laptop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118AC2AC3EF7700957823 /* Laptop.cpp */; };
+		DBD118B12AC3EF8800957823 /* CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118AF2AC3EF8800957823 /* CPU.cpp */; };
+		DBD118B42AC3F03E00957823 /* SSD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118B22AC3F03E00957823 /* SSD.cpp */; };
+		DBD118B72AC3F04900957823 /* RAM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118B52AC3F04900957823 /* RAM.cpp */; };
+		DBD118BA2AC3F06E00957823 /* GPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD118B82AC3F06E00957823 /* GPU.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		DBD118A22AC3EF5000957823 /* Laptop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Laptop; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD118A52AC3EF5000957823 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DBD118AC2AC3EF7700957823 /* Laptop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Laptop.cpp; sourceTree = "<group>"; };
+		DBD118AD2AC3EF7700957823 /* Laptop.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Laptop.hpp; sourceTree = "<group>"; };
+		DBD118AF2AC3EF8800957823 /* CPU.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPU.cpp; sourceTree = "<group>"; };
+		DBD118B02AC3EF8800957823 /* CPU.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPU.hpp; sourceTree = "<group>"; };
+		DBD118B22AC3F03E00957823 /* SSD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSD.cpp; sourceTree = "<group>"; };
+		DBD118B32AC3F03E00957823 /* SSD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SSD.hpp; sourceTree = "<group>"; };
+		DBD118B52AC3F04900957823 /* RAM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RAM.cpp; sourceTree = "<group>"; };
+		DBD118B62AC3F04900957823 /* RAM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RAM.hpp; sourceTree = "<group>"; };
+		DBD118B82AC3F06E00957823 /* GPU.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GPU.cpp; sourceTree = "<group>"; };
+		DBD118B92AC3F06E00957823 /* GPU.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GPU.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				DBD118A52AC3EF5000957823 /* main.cpp */,
+				DBD118B82AC3F06E00957823 /* GPU.cpp */,
+				DBD118B92AC3F06E00957823 /* GPU.hpp */,
+				DBD118B52AC3F04900957823 /* RAM.cpp */,
+				DBD118B62AC3F04900957823 /* RAM.hpp */,
+				DBD118B22AC3F03E00957823 /* SSD.cpp */,
+				DBD118B32AC3F03E00957823 /* SSD.hpp */,
+				DBD118AF2AC3EF8800957823 /* CPU.cpp */,
+				DBD118B02AC3EF8800957823 /* CPU.hpp */,
+				DBD118AC2AC3EF7700957823 /* Laptop.cpp */,
+				DBD118AD2AC3EF7700957823 /* Laptop.hpp */,
 			);
 			path = Laptop;
 			sourceTree = "<group>";
@@ -119,7 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD118BA2AC3F06E00957823 /* GPU.cpp in Sources */,
+				DBD118B72AC3F04900957823 /* RAM.cpp in Sources */,
+				DBD118B12AC3EF8800957823 /* CPU.cpp in Sources */,
 				DBD118A62AC3EF5000957823 /* main.cpp in Sources */,
+				DBD118B42AC3F03E00957823 /* SSD.cpp in Sources */,
+				DBD118AE2AC3EF7700957823 /* Laptop.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
