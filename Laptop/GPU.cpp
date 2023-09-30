@@ -54,7 +54,7 @@ char* GPU::GetCompany() const
 {
     return company;
 }
-double GPU::GetPrice()
+double GPU::GetPrice()const
 {
     return price;
 }
@@ -72,4 +72,12 @@ void GPU::SetCompany(const char* c)
 void GPU::SetPrice(double p)
 {
     price =p;
+}
+GPU::GPU(const GPU& b)
+{
+    model=new char[strlen(b.model)+1];
+    strcpy(model, b.model);
+    company=new char[strlen(b.company)+1];
+    strcpy(company, b.company);
+    price=b.price;;
 }

@@ -53,7 +53,7 @@ char* RAM::GetCompany()const
 {
     return company;
 }
-double RAM::GetPrice()
+double RAM::GetPrice()const
 {
     return price;
 }
@@ -71,4 +71,12 @@ void RAM::SetCompany(const char* c)
 void RAM::SetPrice(double p)
 {
     price =p;
+}
+RAM::RAM(const RAM& b)
+{
+    model=new char[strlen(b.model)+1];
+    strcpy(model, b.model);
+    company=new char[strlen(b.company)+1];
+    strcpy(company, b.company);
+    price=b.price;;
 }

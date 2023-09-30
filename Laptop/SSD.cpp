@@ -53,7 +53,7 @@ char* SSD::GetCompany()const
 {
     return company;
 }
-double SSD::GetPrice()
+double SSD::GetPrice()const
 {
     return price;
 }
@@ -71,4 +71,12 @@ void SSD::SetCompany(const char* c)
 void SSD::SetPrice(double p)
 {
     price =p;
+}
+SSD::SSD(const SSD& b)
+{
+    model=new char[strlen(b.model)+1];
+    strcpy(model, b.model);
+    company=new char[strlen(b.company)+1];
+    strcpy(company, b.company);
+    price=b.price;;
 }

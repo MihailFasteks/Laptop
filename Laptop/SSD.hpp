@@ -28,9 +28,10 @@ public:
     
     char* GetModel()const ;
     char* GetCompany()const ;
-    double GetPrice();
+    double GetPrice()const;
 
     void SetModel(const char*);
     void SetCompany(const char*);
     void SetPrice(double);
+    SSD(const SSD& b);
 };

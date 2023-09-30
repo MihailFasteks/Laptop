@@ -53,7 +53,7 @@ char* CPU::GetCompany()const
 {
     return company;
 }
-double CPU::GetPrice()
+double CPU::GetPrice()const
 {
     return price;
 }
@@ -68,8 +68,16 @@ void CPU::SetCompany(const char* c)
     company=new char[strlen(c)+1];
     strcpy(company, c);
 }
-void CPU::SetPrice(double p)
+void CPU::SetPrice( double p)
 {
     price =p;
+}
+CPU::CPU(const CPU& b)
+{
+    model=new char[strlen(b.model)+1];
+    strcpy(model, b.model);
+    company=new char[strlen(b.company)+1];
+    strcpy(company, b.company);
+    price=b.price;;
 }
 

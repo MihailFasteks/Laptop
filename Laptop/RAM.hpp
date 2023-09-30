@@ -28,9 +28,10 @@ public:
     void Print();
     char* GetModel() const;
     char* GetCompany() const;
-    double GetPrice();
+    double GetPrice()const;
 
     void SetModel(const char*);
     void SetCompany(const char*);
     void SetPrice(double);
+    RAM(const RAM& b);
 };

@@ -24,15 +24,16 @@ public:
     ~CPU();
     CPU(const char* m);
     CPU(const char* m, const char* c);
-    CPU(const char* m, const char* c, double p);
+    CPU(const char* m, const char* c,double p);
     void Print();
     
     
     char* GetModel()const ;
     char* GetCompany()const ;
-    double GetPrice();
+    double GetPrice()const;
 
     void SetModel(const char*);
     void SetCompany(const char*);
     void SetPrice(double);
+    CPU(const CPU& b);
 };

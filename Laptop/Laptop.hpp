@@ -33,15 +33,16 @@ public:
     Laptop(const char* m);
     Laptop(const char* m, const char* c);
     Laptop(const char* m, const char* c, double p);
-    Laptop(const char* m, const char* c, const char* gpuModel, const char* gpuCompany, double gpuPrice, const char* ramModel, const char* ramCompany, double ramPrice, const char* ssdModel, const char* ssdCompany, double ssdPrice, const char* cpuModel, const char* cpuCompany, double cpuPrice);
+    Laptop(const char* m, const char* c, const char* gpuModel, const char* gpuCompany,  double gpuPrice, const char* ramModel, const char* ramCompany,  double ramPrice, const char* ssdModel, const char* ssdCompany,  double ssdPrice, const char* cpuModel, const char* cpuCompany, double cpuPrice);
     ~Laptop();
     char* GetModel()const ;
     char* GetCompany()const ;
-    double GetPrice();
+    double GetPrice()const;
 
     void SetModel(const char*);
     void SetCompany(const char*);
     void SetPrice(double);
     
     void Print();
+    Laptop(const Laptop& b);
 };

@@ -88,4 +88,14 @@ void Laptop::SetCompany(const char* c)
     company=new char[strlen(c)+1];
     strcpy(company, c);
 }
+Laptop::Laptop(const Laptop& b):gpu(b.gpu.GetModel(), b.gpu.GetCompany(), b.gpu.GetPrice()), ram(b.ram.GetModel(), b.ram.GetCompany(), b.ram.GetPrice()), ssd(b.ssd.GetModel(), b.ssd.GetCompany(), b.ssd.GetPrice()), cpu(b.cpu.GetModel(), b.cpu.GetCompany(), b.cpu.GetPrice())
+{
+    model=new char[strlen(b.model)+1];
+    strcpy(model, b.model);
+    company=new char[strlen(b.company)+1];
+    strcpy(company, b.company);
+    price=b.price;
+    
+}
+
 
